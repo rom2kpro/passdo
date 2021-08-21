@@ -58,7 +58,7 @@ export default {
     },
     methods: {
         async Login() {
-            const response = await axios.post('http://154.16.112.81/user/login/', this.form);
+            const response = await axios.post(`https://vantien.tk/user/login/`, this.form);
             console.log(response);
         },
         async loginWithGoogle () {
@@ -82,7 +82,7 @@ export default {
                 // }
                 const auth = await GoogleUser.getAuthResponse();
                 console.log(auth.id_token);
-                const response = await axios.post('http://154.16.112.81/social_auth/google/',{
+                const response = await axios.post('https://vantien.tk/social_auth/google/',{
                     "auth_token": auth.id_token
                 })
                 console.log(response);

@@ -58,7 +58,7 @@ export default {
             var url = new URL(url_string);
             var url_reset = url.search.slice(11);
             console.log(url_reset);
-            const response = await axios.post(`http://154.16.112.81/${url_reset}`, this.form);
+            const response = await axios.post(`https://vantien.tk/${url_reset}`, this.form);
             this.message = response.data;
             setTimeout(() => {
                 this.$router.push('/');

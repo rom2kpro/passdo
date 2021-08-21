@@ -151,7 +151,7 @@ export default {
     methods: {
         async Register(){
             console.log(this.form);
-            const response = await axios.post("http://154.16.112.81/user/signup/", this.form);
+            const response = await axios.post("https://vantien.tk/user/signup/", this.form);
             console.log(response)
         }
     },

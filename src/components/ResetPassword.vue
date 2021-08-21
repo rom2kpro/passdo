@@ -111,7 +111,7 @@ export default {
     methods: {
         async ResetPassword(){
             console.log(this.form);
-            const response = await axios.post("http://154.16.112.81/user/reset_password/", this.form);
+            const response = await axios.post("https://vantien.tk/user/reset_password/", this.form);
             console.log(response);
         }
     },
