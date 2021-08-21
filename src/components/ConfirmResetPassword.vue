@@ -56,7 +56,7 @@ export default {
         async ConfirmResetPassword() {
             var url_string = location.href
             var url = new URL(url_string);
-            var url_reset = url.search.slice(11);
+            var url_reset = url.search.slice(5);
             console.log(url_reset);
             const response = await axios.post(`https://vantien.tk/${url_reset}`, this.form);
             this.message = response.data;

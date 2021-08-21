@@ -13,7 +13,7 @@ export default {
     async mounted() {
         var url_string = location.href
         var url = new URL(url_string);
-        var url_confirm = url.search.slice(13);
+        var url_confirm = url.search.slice(5);
         console.log(url_confirm)
         const response = await axios.get(`https://vantien.tk/${url_confirm}`);
         this.confirm = response.data;
